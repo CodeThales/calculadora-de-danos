@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de danos v3.0</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>CALCULADORA DE DANOS</h1>
+  <H2>ESCOLHA SEU INIMIGO</H2>
+
+  <section>
+
+    <div class="inimigos">
+
+      {% for inimigo in inimigos %}
+      <div class="inimigo" data-vida="{{inimigo.vida}}" data-nome="{{inimigo.nome}}">
+        <div class="sizeimg"><img src="{{inimigo.foto}}" width="250px" height="250px" alt="foto de um inimigo"></div>
+        <h3>{{inimigo.nome}}</h3>
+      </div>
+      {% endfor %}
+    </div>
+
+
+    <H2>ESCOLHA SUA ARMA</H2>
+
+    <div class="armas">
+
+      {% for arma in armas %}
+      <div class="arma" data-dano="{{arma.dano}}" data-nome="arma.nome">
+        <img src="{{arma.foto}}" width="250px" height="250px" alt="foto de uma arma">
+        <h3>{{arma.nome}}</h3>
+      </div>
+      {% endfor %}
+    </div>
+    
+  </section> 
+  
+  <div class="botao">
+    <button id="botao" onclick="jogar()">JOGAR</button>
+  </div>
+
+<script type="text/javascript" src="/static/index.js"></script>  
+</body>
+</html>

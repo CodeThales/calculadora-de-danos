@@ -1,0 +1,84 @@
+*{
+  margin-top: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+body{
+  background-image: url('https://i0.wp.com/i.pinimg.com/originals/20/d2/aa/20d2aafb474ae2eb3db6c4d672a4376d.png');
+}
+
+h1{
+  text-align: center;
+  color: azure;
+  font: bold 32pt arial;
+  margin-top: 30px;
+  text-shadow: 1.5px 1.5px rgba(8, 8, 8, 0.623);
+}
+
+h2{
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+  font: bold 30pt calibri;
+  text-shadow: 1.5px 1.5px rgb(241, 240, 240);
+  background-color: rgba(128, 128, 128, 0.308);
+  color: black solid;
+  border-radius: 10px;
+  padding: 5px;
+  
+}
+
+h3{
+  font: normal 22pt arial;
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  text-justify: center;
+  
+}
+
+.inimigos,
+.armas{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.inimigo,
+.arma{
+  margin: 0 20px;  
+  text-align: center;  
+  background-color: rgba(245, 245, 245, 0.342);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.inimigo:hover,
+.arma:hover{
+  transform: scale(1.05);
+}
+
+.inimigo-selecionado,
+.arma-selecionada{
+  border-right: 10px solid black;
+  transform: scale(1.05);
+}
+
+.botao{
+  text-align: center;  
+}
+
+#botao{
+  padding: 10px 50px;
+  font: bold 22pt arial;
+  margin-top: 50px;
+  border-radius: 20px;
+}
